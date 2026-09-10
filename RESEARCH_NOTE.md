@@ -101,5 +101,5 @@ Each feedback critique follows an **Evidence -> Concern -> Suggestion** format:
 
 - **In-Memory Storage**: Attempt history resets upon server restart. For an MVP, this avoids database setup friction while keeping persistence isolated behind a repository interface.
 - **Textual Design Representation**: Focuses on structured textual design rather than visual class diagrams, prioritizing editing speed and evaluation accuracy.
-- **LLM Phrasing Variance**: While rubric scoring weights remain mathematically calibrated, qualitative feedback phrasing can vary slightly between runs.
+- **LLM Score & Phrasing Variance**: Rubric weights remain fixed, while qualitative feedback and individual scores may vary slightly across runs.
 - **Prioritizing Feedback Depth over Platform Scale**: The prototype focuses on evaluation explainability, actionable critique, and domain design quality rather than distributed multi-tier deployment.

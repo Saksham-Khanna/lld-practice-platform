@@ -302,7 +302,7 @@ html_content = """<!DOCTYPE html>
       <ul>
         <li><strong>In-Memory Storage:</strong> Attempt history resets upon server restart. For an MVP prototype, this avoids database setup friction while keeping storage isolated behind a repository interface (<code>PracticeStore</code>).</li>
         <li><strong>Textual Representation over UML:</strong> Lacks visual class diagramming, but structured text is significantly faster to draft, edit, and evaluate reliably with an LLM.</li>
-        <li><strong>LLM Phrasing Variance:</strong> While mathematical rubric weights and scores remain stable, qualitative phrasing can vary slightly across runs of the same design.</li>
+        <li><strong>LLM Score &amp; Phrasing Variance:</strong> Rubric weights remain fixed, while qualitative feedback and individual scores may vary slightly across runs.</li>
         <li><strong>Prioritizing Feedback Depth over Platform Scale:</strong> The prototype focuses on evaluation explainability, actionable critique, and domain design quality rather than distributed multi-tier deployment.</li>
       </ul>
     </div>
