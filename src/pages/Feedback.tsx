@@ -158,9 +158,16 @@ const Feedback = () => {
         <div className="lg:col-span-2 space-y-6">
           <div className="flex items-center justify-between gap-2">
             <h2 className="text-2xl font-bold text-slate-900">Architectural Evaluation</h2>
-            <span className="text-xs px-3 py-1 rounded bg-slate-100 text-slate-700 border border-slate-200 font-semibold uppercase tracking-wider">
-              Scorecard
-            </span>
+            <div className="flex items-center gap-2">
+              {evaluation.modelUsed && (
+                <span className="text-[11px] font-mono font-medium text-slate-600 bg-slate-100 px-2.5 py-0.5 rounded border border-slate-200">
+                  {evaluation.modelUsed}
+                </span>
+              )}
+              <span className="text-xs px-3 py-1 rounded bg-slate-100 text-slate-700 border border-slate-200 font-semibold uppercase tracking-wider">
+                Scorecard
+              </span>
+            </div>
           </div>
 
           {/* Strengths section */}
